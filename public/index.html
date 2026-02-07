@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude Chat</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <div>
+          <h1>Claude Chat</h1>
+          <p>Talk to Claude with the Anthropic API.</p>
+        </div>
+        <div class="model-pill" id="model-pill"></div>
+      </header>
+
+      <section class="chat" id="chat"></section>
+
+      <form class="composer" id="composer">
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Ask Claude anything..."
+          rows="2"
+          required
+        ></textarea>
+        <button type="submit" id="send">Send</button>
+      </form>
+
+      <div class="status" id="status"></div>
+    </main>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
